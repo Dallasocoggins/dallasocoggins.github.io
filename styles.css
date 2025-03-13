@@ -3,9 +3,29 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1e1e1e;
+    background-color: #000;
+    background-image: url("images/dark-mosaic.png");
+    
     color: #fff;
 }
+
+/* General Style for Horizontal Lines */
+.separator {
+    width: 80%; /* Controls the width of the line */
+    margin: 30px auto; /* Centers the line and adds spacing */
+    border-top: 2px solid #1e90ff; /* Blue color for the line */
+    opacity: 0.5; /* Slight transparency for a softer look */
+}
+
+/* Optional: Adding line styles with the <hr> tag */
+hr {
+    width: 80%; /* Controls the width of the line */
+    margin: 30px auto; /* Centers the line and adds spacing */
+    border: none;
+    border-top: 2px solid #1e90ff; /* Blue color for the line */
+    opacity: 0.5; /* Slight transparency for a softer look */
+}
+
 
 /* Header */
 header {
@@ -72,7 +92,6 @@ nav ul li a:hover {
 
 /* About Section Styling */
 #about {
-    background: linear-gradient(135deg, #1e1e1e, #292929);
     padding: 60px 20px;
     text-align: center;
 }
@@ -80,7 +99,7 @@ nav ul li a:hover {
 .about-container {
     max-width: 800px;
     margin: 0 auto;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(51, 51, 51, 1);
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -97,14 +116,81 @@ nav ul li a:hover {
     line-height: 1.6;
     margin-bottom: 15px;
     color: #f1f1f1;
+    text-align: left;
 }
 
+/* Experience Section */
+#experience {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#experience h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #1e90ff; /* Blue accent for heading */
+}
+
+/* Experience Entry Styling */
+.experience-entry {
+    background-color: rgba(51, 51, 51, 1);
+    border-radius: 12px; /* Rounded corners */
+    padding: 30px;
+    margin: 20px auto; /* Centers the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    width: 60%; /* Takes up 80% of the screen width */
+    max-width: 900px; /* Prevents it from being too wide */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.experience-entry:hover {
+    transform: translateY(-5px); /* Slight hover lift */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Enhanced hover shadow */
+}
+
+/* Title and Date */
+.experience-entry h3 {
+    font-size: 1.8rem;
+    color: #1e90ff; /* Blue text for job title */
+    margin-bottom: 5px;
+}
+
+.experience-entry .date {
+    font-size: 1rem;
+    color: #bbb; /* Light gray for date */
+    margin-bottom: 15px;
+}
+
+/* Description */
+.experience-entry p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+    text-align: left;
+}
+
+/* Bullet Points */
+.experience-entry ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.experience-entry ul li {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 8px;
+    list-style: disc;
+}
+
+.experience-entry ul li strong {
+    color: #1e90ff; /* Blue highlights for key terms */
+}
 
 /* Skills Section */
 #skills {
     text-align: center;
     padding: 50px 20px;
-    background: #292929;
 }
 
 #skills h2 {
@@ -142,7 +228,6 @@ nav ul li a:hover {
 
 /* Projects Section */
 #projects {
-    background-color: #292929;  /* Dark background to match rest of the site */
     padding: 50px 20px;
     color: #fff;  /* Light text for contrast */
     font-family: 'Arial', sans-serif;
@@ -166,12 +251,13 @@ nav ul li a:hover {
 }
 
 .project {
-    background-color: #333333;  /* Dark card background */
-    border-radius: 8px;
+    background-color: #333333; 
+    border-radius: 12px; /* Rounded corners */
     padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);  /* Subtle shadow */
-    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px auto; /* Centers the box horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Soft shadow */
+    width: 80%; /* Takes up 80% of the screen width */
+    max-width: 1200px; /* Prevents it from being too wide on larger screens */
 }
 
 .project:hover {
@@ -245,22 +331,26 @@ nav ul li a:hover {
 
 
 
-
 /* Contact Section */
 #contact {
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px 40px;
     background: #292929;
+    border-radius: 15px; /* Rounded corners */
+    width: 80%; /* Control the width */
+    max-width: 600px; /* Limit the maximum width */
+    margin: 20px auto; /* Center horizontally and add some margin */
+    bottom: 20px; /* Position it just above the footer */
 }
 
 #contact h2 {
-    font-size: 28px;
+    font-size: 24px;
     color: #1e90ff;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #contact p {
-    font-size: 18px;
+    font-size: 16px;
     margin: 10px 0;
     color: #fff;
 }
@@ -280,20 +370,20 @@ nav ul li a:hover {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .contact-links a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    width: 40px; /* Slightly smaller icons */
+    height: 40px;
     background: #333;
     border-radius: 50%;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 24px; /* Size for the icons */
+    font-size: 20px; /* Adjust size for icons */
 }
 
 .contact-links a:hover {
@@ -310,11 +400,16 @@ nav ul li a:hover {
     color: #fff;
 }
 
-
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 20px 40px;
     background: #222;
-    margin-top: 20px;
+    left: 50%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 16px;
+    color: #fff;
 }
