@@ -119,72 +119,162 @@ nav ul li a:hover {
     text-align: left;
 }
 
+/* Leadership Section */
+#leadership {
+    padding: 50px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+#leadership h2 {
+    font-size: 2.5rem;
+    color: #1e90ff;
+    margin-bottom: 30px;
+}
+
+.leadership-entry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1000px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leadership-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.leadership-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.leadership-details {
+    text-align: left;
+}
+
+.leadership-details h3 {
+    font-size: 1.8rem;
+    color: #1e90ff;
+}
+
+.role, .dates, .location {
+    display: block;
+    font-size: 1rem;
+    color: #bbb;
+    margin: 5px 0;
+}
+
+.leadership-details p {
+    font-size: 1rem;
+    color: #f1f1f1;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .leadership-entry {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .leadership-logo {
+        margin-bottom: 15px;
+    }
+
+    .leadership-details {
+        text-align: center;
+    }
+}
+
+
 /* Experience Section */
 #experience {
-    text-align: center;
     padding: 50px 20px;
+    color: #fff;
+    text-align: center;
 }
 
 #experience h2 {
     font-size: 2.5rem;
+    color: #1e90ff;
     margin-bottom: 30px;
-    color: #1e90ff; /* Blue accent for heading */
 }
 
-/* Experience Entry Styling */
 .experience-entry {
-    background-color: rgba(51, 51, 51, 1);
-    border-radius: 12px; /* Rounded corners */
-    padding: 30px;
-    margin: 20px auto; /* Centers the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow */
-    width: 60%; /* Takes up 80% of the screen width */
-    max-width: 900px; /* Prevents it from being too wide */
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1000px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .experience-entry:hover {
-    transform: translateY(-5px); /* Slight hover lift */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Enhanced hover shadow */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Title and Date */
-.experience-entry h3 {
-    font-size: 1.8rem;
-    color: #1e90ff; /* Blue text for job title */
-    margin-bottom: 5px;
+.experience-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+    border-radius: 8px;
 }
 
-.experience-entry .date {
-    font-size: 1rem;
-    color: #bbb; /* Light gray for date */
-    margin-bottom: 15px;
-}
-
-/* Description */
-.experience-entry p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #ddd;
+.experience-info {
     text-align: left;
+    flex-grow: 1;
 }
 
-/* Bullet Points */
-.experience-entry ul {
+.experience-info h3 {
+    font-size: 1.8rem;
+    color: #1e90ff;
+}
+
+.role, .dates, .location {
+    display: block;
+    font-size: 1rem;
+    color: #bbb;
+    margin: 5px 0;
+}
+
+.experience-info p {
+    font-size: 1rem;
+    color: #f1f1f1;
+    line-height: 1.5;
     margin-top: 10px;
-    padding-left: 20px;
 }
 
-.experience-entry ul li {
-    font-size: 1.1rem;
-    color: #ccc;
-    margin-bottom: 8px;
-    list-style: disc;
-}
+@media (max-width: 768px) {
+    .experience-entry {
+        flex-direction: column;
+        text-align: center;
+    }
 
-.experience-entry ul li strong {
-    color: #1e90ff; /* Blue highlights for key terms */
+    .experience-logo-container {
+        margin-bottom: 15px;
+    }
+
+    .experience-info {
+        text-align: center;
+    }
 }
 
 /* Skills Section */
