@@ -1,17 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dallas Coggins | Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+
 
     <!-- Header Section -->
     <header>
+        <img src="images/profile.jpg" alt="Dallas Coggins" class="profile-pic">
         <h1>Dallas Coggins</h1>
         <p>Game Developer | Software Engineer</p>
+        <a href="resume.pdf" download class="resume-btn">Download Resume</a>
     </header>
 
     <!-- Navigation -->
@@ -29,44 +30,283 @@
         <h2>About Me</h2>
         <p>Hello! I'm a passionate game developer with experience in C++, Unreal Engine, and multiplayer networking. I love building immersive experiences and optimizing gameplay systems.</p>
     </section>
-
+    
     <!-- Projects Section -->
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>My Projects</h2>
+
+        <!-- Project: Plugged In -->
         <div class="project">
-            <img src="images/project1.jpg" alt="Project 1">
-            <h3>Project Name</h3>
-            <p>Description of the project. What it does, how it was built, and key features.</p>
+            <h3>Plugged In</h3>
+            <p class="date"><strong>Feb 2024</strong> - <strong>Feb 2024</strong></p>
+            <p>
+                Plugged In is a fast-paced 2D platformer where players control a nimble robot 
+                equipped with a grappling hook that plugs into electrical "outlets" scattered 
+                throughout the levels. These outlets charge the robot's battery, granting it 
+                the ability to perform powerful platforming maneuvers such as double jumps, 
+                dashes, and ground slams. Mastering the balance between movement and energy 
+                management is key to navigating the game's dynamic environments.
+            </p>
+            <p>    
+                Developed in just 48 hours for Chillennium 2024, Plugged In was a 
+                collaborative effort between a team of four—two artists and two programmers. 
+                I contributed by designing gameplay mechanics, scripting core movement and 
+                abilities in C#, and crafting engaging level layouts. The game's 
+                innovative mechanics and polished execution earned it first place 
+                among the competition's many entries.
+            </p>
+            
+            <!-- YouTube Video Embed -->
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ydFBQBmOyZ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills">
+                <span class="skill">Unity</span>
+                <span class="skill">Game Design</span>
+                <span class="skill">C#</span>
+                <span class="skill">Game Development</span>
+                <span class="skill">Team Collaboration</span>
+            </div>
+
+            <div class="project-links">
+                <a href="https://pengso0o.itch.io/plugged-in" target="_blank" class="project-link">View Project</a>
+            </div>
         </div>
+
+        <!-- Project: Who's Afraid of the Dark? -->
         <div class="project">
-            <img src="images/project2.jpg" alt="Project 2">
-            <h3>Project Name</h3>
-            <p>Description of the project. What it does, how it was built, and key features.</p>
+            <h3>Who's Afraid of the Dark?</h3>
+            <p class="date"><strong>Feb 2025</strong></p>
+            <p>
+                In the Chillennium 2025 game jam, for the theme "In Plain Sight," my team and I created a horror 2D platformer in just under 48 hours. 
+                I took the lead in designing the gameplay and levels while also writing C# scripts to implement core game mechanics. 
+                The game focuses on a girl named "Who," who is being chased by a terrifying monster. The monster is incredibly fast but freezes when exposed to the light.
+                The player controls Who and her light in her attempt to find her escape from the monster while managing her light resources.
+                For this game, I collaborated with a team of 3 others: 2 artists and 1 programmer.
+                We earned third place out of around 50 submissions.
+            </p>
+
+            <!-- YouTube Video Embed -->
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aniFQTXanGk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills">
+                <span class="skill">Unity</span>
+                <span class="skill">Game Design</span>
+                <span class="skill">C#</span>
+                <span class="skill">Game Development</span>
+                <span class="skill">Team Collaboration</span>
+            </div>
+
+            <!-- Project Links Section -->
+            <div class="project-links">
+                <a href="https://pengso0o.itch.io/who-is-afraid-of-the-dark" target="_blank" class="project-link">View Project</a>
+                <a href="https://github.com/Dallasocoggins/Chillennium2025" target="_blank" class="project-link">GitHub Repo</a>
+            </div>
+        </div>
+
+
+        <!-- Project: Calamity Crew -->
+        <div class="project">
+            <h3>Calamity Crew</h3>
+            <p class="date"><strong>2024</strong></p>
+            <p>
+                Calamity Crew is a cooperative multiplayer game developed with the 
+                LIVE Lab, where players work together to rescue survivors trapped 
+                under rubble on a flooding island. As the water rises, teamwork and 
+                quick decision-making become essential to navigate the environment 
+                and save as many people as possible before time runs out.  
+                I played a key role in developing the game's peer-to-peer multiplayer 
+                system, ensuring smooth and responsive online gameplay. This involved 
+                implementing replication strategies to synchronize player actions, 
+                optimizing network serialization to minimize bandwidth usage and 
+                latency, and designing authoritative game logic to prevent 
+                cheating and maintain game state consistency.  
+                Through a combination of engaging cooperative mechanics and polished 
+                networking, **Calamity Crew** delivers an immersive multiplayer 
+                experience that challenges players to work together under pressure.
+            </p>
+            <div class="skills">
+                <span class="skill">Unreal Engine 5</span>
+                <span class="skill">C++</span>
+                <span class="skill">Multiplayer Networking</span>
+            </div>
+            <!--
+            <div class="project-links">
+                <a href="https://link-to-project.com" target="_blank" class="project-link">View Project</a>
+                <a href="https://github.com/dallasocoggins/calamity-crew" target="_blank" class="project-link">GitHub Repo</a>
+            </div>
+            -->
+        </div>
+
+        <!-- Project: Reliable Data Transfer over UDP -->
+        <div class="project">
+            <h3>Reliable Data Transfer over UDP</h3>
+            <p class="date"><strong>Apr 2024</strong></p>
+            <p>
+                Reliable Data Transfer over UDP is a CSCE 463, Networks and Distributed Processing, 
+                project in which I implemented 
+                a custom Reliable Data Transfer (RDT) protocol on top of UDP to ensure ordered, 
+                lossless communication between networked systems. Unlike TCP, UDP does not 
+                guarantee reliable delivery, so this project involved designing and implementing 
+                retransmission mechanisms using acknowledgments and sequence numbers to handle 
+                packet loss, corruption, and out-of-order delivery.
+                To test the protocol's resilience, I simulated network conditions with varying 
+                levels of packet loss and latency, refining the retransmission logic for 
+                efficiency. This project deepened my understanding of low-level networking, 
+                socket programming, and transport-layer protocols, reinforcing key concepts 
+                in network reliability and performance optimization.
+            </p>
+            <div class="skills">
+                <span class="skill">C++</span>
+                <span class="skill">Sockets</span>
+                <span class="skill">Networking</span>
+                <span class="skill">Threads</span>
+            </div>
+
+            <!--
+            <div class="project-links">
+                <a href="https://link-to-project.com" target="_blank" class="project-link">View Project</a>
+                <a href="https://github.com/dallasocoggins/rdt-protocol" target="_blank" class="project-link">GitHub Repo</a>
+            </div>
+            -->
+        </div>
+
+        <!-- Project: C++ Web Crawler -->
+        <div class="project">
+            <h3>C++ Web Crawler</h3>
+            <p class="date"><strong>Feb 2024</strong></p>
+            <p>
+                For CSCE 463, I developed a high-performance web crawler capable of 
+                processing URLs from an input file and asynchronously fetching web 
+                content. The crawler was designed with parallelized HTTP requests 
+                using multithreading, significantly improving page retrieval 
+                efficiency.
+                To ensure scalability and avoid redundant processing, I implemented 
+                a URL queueing and deduplication system, preventing duplicate 
+                requests and optimizing memory usage. The project enhanced my 
+                understanding of low-level networking, concurrent programming, 
+                and distributed systems, providing hands-on experience with socket 
+                programming and HTTP communication protocols.
+            </p>
+            <div class="skills">
+                <span class="skill">C++</span>
+                <span class="skill">Networking</span>
+                <span class="skill">Multithreading</span>
+            </div>
+
+            <!--
+            <div class="project-links">
+                <a href="https://link-to-project.com" target="_blank" class="project-link">View Project</a>
+                <a href="https://github.com/dallasocoggins/web-crawler" target="_blank" class="project-link">GitHub Repo</a>
+            </div>
+            -->
+
+        </div>
+
+        <!-- Project: Online Battleship -->
+        <div class="project">
+            <h3>Online Battleship</h3>
+            <p class="date"><strong>2024</strong></p>
+            <p>
+                Text based battleship game which utilizes java to have an 
+                online game over TCP connections.
+            </p>
+            <div class="skills">
+                <span class="skill">Java</span>
+                <span class="skill">Networking</span>
+                <span class="skill">Sockets</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/Dallasocoggins/ECEN424Project" target="_blank" class="project-link">GitHub Repo</a>
+            </div>
+        </div>
+
+        <!-- Project: OpenGL Raytracer -->
+        <div class="project">
+            <h3>OpenGL Raytracer</h3>
+            <p class="date"><strong>Nov 2023</strong> - <strong>Dec 2023</strong></p>
+            <p>
+                I developed a raytracer from scratch using OpenGL and C++ to simulate realistic lighting and shadows. Features like anti-aliasing, motion blur, and area lights were incorporated to enhance the visual quality of rendered scenes. This project helped me deepen my understanding of 3D graphics and image rendering techniques.
+            </p>
+
+            <!-- YouTube Video Embed -->
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/8dZr6let_Vo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="skills">
+                <span class="skill">OpenGL</span>
+                <span class="skill">C++</span>
+                <span class="skill">Graphics Programming</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/dallasocoggins/opengl-raytracer" target="_blank" class="project-link">GitHub Repo</a>
+            </div>
         </div>
     </section>
+
+
+
 
     <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>C++ / Python / Java</li>
-            <li>Unreal Engine / Unity / Godot</li>
-            <li>Multiplayer & Networking</li>
-            <li>Cybersecurity & Performance Optimization</li>
-        </ul>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <p>Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, C, Ruby</p>
+            </div>
+
+            <div class="skill-category">
+                <h3>Frameworks</h3>
+                <p>React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI, Rails</p>
+            </div>
+
+            <div class="skill-category">
+                <h3>Developer Tools</h3>
+                <p>Git, Perforce, Plastic SCM, Docker, Google Cloud Platform, VS Code, PyCharm, IntelliJ</p>
+            </div>
+
+            <div class="skill-category">
+                <h3>Libraries</h3>
+                <p>OpenGL</p>
+            </div>
+
+            <div class="skill-category">
+                <h3>Engines</h3>
+                <p>Unity, Unreal Engine, Godot</p>
+            </div>
+        </div>
     </section>
+
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:dallasocoggins@gmail.com">your.email@example.com</a></p>
-        <p>GitHub: <a href="https://github.com/dallasocoggins" target="_blank">github.com/yourgithub</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/dallas-coggins-1b568622b/" target="_blank">linkedin.com/in/yourname</a></p>
+
+        <!-- Social Media Icons -->
+        <div class="contact-links">
+            <a href="mailto:dallasocoggins@gmail.com" target="_blank">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/dallasocoggins" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/dallas-coggins-1b568622b/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
     </section>
+
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Your Name. All Rights Reserved.</p>
+        <p>© 2025 Dallas Coggins. All Rights Reserved.</p>
     </footer>
 
 </body>
