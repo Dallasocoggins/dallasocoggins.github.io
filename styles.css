@@ -92,7 +92,7 @@ nav ul li a:hover {
 
 /* About Section Styling */
 #about {
-    padding: 60px 20px;
+    padding: 30px 20px 20px; /* Reduce bottom padding slightly if needed */
     text-align: center;
 }
 
@@ -107,7 +107,7 @@ nav ul li a:hover {
 
 #about h2 {
     font-size: 2.8rem;
-    margin-bottom: 20px;
+    margin: 10px 0 20px; /* Reduce space above */
     color: #1e90ff;
 }
 
@@ -121,7 +121,7 @@ nav ul li a:hover {
 
 /* Leadership Section */
 #leadership {
-    padding: 50px 20px;
+    padding: 30px 20px;
     color: #fff;
     text-align: center;
 }
@@ -200,7 +200,7 @@ nav ul li a:hover {
 
 /* Experience Section */
 #experience {
-    padding: 50px 20px;
+    padding: 20px 20px;
     color: #fff;
     text-align: center;
 }
@@ -280,7 +280,7 @@ nav ul li a:hover {
 /* Skills Section */
 #skills {
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px 20px;
 }
 
 #skills h2 {
@@ -318,7 +318,7 @@ nav ul li a:hover {
 
 /* Projects Section */
 #projects {
-    padding: 50px 20px;
+    padding: 20px 20px;
     color: #fff;  /* Light text for contrast */
     font-family: 'Arial', sans-serif;
 }
